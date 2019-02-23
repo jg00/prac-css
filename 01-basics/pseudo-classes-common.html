@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Common Pseudo Classes</title>
+
+    <style>
+      ul {
+        font-size: 40px;
+        list-style: none;
+      }
+
+      ul li:first-child {
+        color: red;
+      }
+
+      ul li:last-child {
+        color: green;
+      }
+
+      /* nth-child(non-zero based number).  This is a method. */
+      ul li:nth-child(3) {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+      <li>item 5</li>
+    </ul>
+  </body>
+</html>

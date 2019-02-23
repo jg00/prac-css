@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Measurement Units</title>
+
+    <style>
+      html {
+        font-size: 15px;
+        /* font-size: 16px (default; can also be changed on browser settings unless explicitly set here in HTML element.) */
+      }
+
+      body {
+        font-size: 20px; /* No effect if h1, p font-size are set to 50px absolute value */
+      }
+
+      /* 
+        1 em relative unit is calculated according to it's closest parent's font-size.
+        If parent element font size is not defined then by default it is Root HTML element font size.
+
+        2 rem relative to HTML always.  It does not matter what the parent element's font-size is set text to.
+      */
+
+      h1,
+      p {
+        /* font-size: 50px; */
+        font-size: 3rem;
+      }
+
+      div {
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Heading</h1>
+    <div>
+      <p>Paragraph (direct parent is div element</p>
+    </div>
+  </body>
+</html>

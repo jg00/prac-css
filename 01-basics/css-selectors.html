@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Selectors</title>
+
+    <!-- 
+      (parent to child)
+        space   all descendant elements of specified element (includes nested elements)
+        >       all immediate children of specified element (does not include nested elements)
+
+        (elements have same parent)
+        +       adjacent sibling immediately after specified element
+        ~       general sibling selects all siblings specified after speicified element (does not include nested elements)
+     -->
+
+    <style>
+      section p {
+        background-color: red;
+      }
+
+      section > p {
+        background-color: green;
+      }
+
+      h1 + p {
+        background-color: yellow;
+      }
+
+      h1 ~ p {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p>Paragraph 1</p>
+      <h1>Heading</h1>
+      <p>Paragraph 2</p>
+      <p>Paragraph 3</p>
+      <div>
+        <p>Nested Paragraph</p>
+      </div>
+      <p>Paragraph 4</p>
+      <p>Paragraph 5</p>
+    </section>
+  </body>
+</html>
