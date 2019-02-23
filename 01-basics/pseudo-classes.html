@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pseudo Classes</title>
+
+    <!-- 
+        Pseudo classes - define special state of an element
+        Pseudo elements - define style for specific part of an element
+    -->
+
+    <style>
+      /* Defining these properties in order matters. */
+      /* Define class before user clicks link.  Applied before other Pseudo calss styles. */
+      a:link {
+        font-size: 35px;
+        text-decoration: none;
+        color: green;
+      }
+
+      /* Define styles after visiting links */
+      a:visited {
+        color: goldenrod;
+      }
+
+      /* Define style when we mouse over the link */
+      a:hover {
+        color: gray;
+      }
+
+      a:active {
+        color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.google.com">Click Here</a>
+  </body>
+</html>
