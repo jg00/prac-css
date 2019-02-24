@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Measurement Units - percent, vh, vw</title>
+
+    <style>
+      section {
+        font-size: 30px;
+        background-color: orangered;
+        color: #fff;
+        width: 70%; /* Note that % works relative to parent */
+      }
+
+      h1 {
+        font-size: 200%;
+      }
+
+      /* p {
+        font-size: 100%;
+      } */
+
+      section div {
+        background-color: green;
+        width: 50%; /* Here it is 50% relative to the parent element */
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Heading</h1>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vero
+          aliquam amet
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

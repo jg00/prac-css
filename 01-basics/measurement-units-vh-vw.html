@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Measurement Units - percent, vh, vw</title>
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      section {
+        font-size: 30px;
+        background-color: orangered;
+        color: #fff;
+        height: 100vh; /* By doing this section element has covered entire page.  Viewport height that is visible. */
+        width: 50vw; /* Remember vh, vw work relative to Viewport*/
+      }
+
+      h1 {
+        font-size: 200%;
+        margin: 0;
+      }
+
+      /* p {
+        font-size: 100%;
+      } */
+
+      section div {
+        background-color: green;
+        width: 50vw; /* No change b/c viewport width of parent is still 50vw*/
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Heading</h1>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vero
+          aliquam amet
+        </p>
+      </div>
+    </section>
+
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam aut ipsum
+      officiis dolorem nam hic amet provident labore, ullam, ad vel! Recusandae
+      hic illum ipsa doloremque eius impedit eum dolor?Nostrum dolor sint
+      distinctio magnam, exercitationem odio molestiae totam nihil soluta illo
+      aliquid saepe quasi animi fugiat nulla voluptatem excepturi similique
+      esse? Cum, accusamus non. Laudantium veniam voluptatum id necessitatibus!
+    </p>
+  </body>
+</html>
