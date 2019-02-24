@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Positions - Static, Relative</title>
+
+    <!--
+        Positions:
+
+        Static - Default position for elements.  Not affected by top, left, right, bottom properties.
+        Relative - Element relative to it's normal position.  
+            - top, right, bottom, left will affect the position
+            - width, height of element will not affect the position
+        Absolute
+        Fixed
+        Sticky
+        
+     -->
+
+    <style>
+      .container {
+        background-color: orangered;
+        width: 700px;
+        height: 600px;
+      }
+
+      .box {
+        width: 350px;
+        height: 100px;
+        font-size: 25px;
+        color: #fff;
+      }
+
+      .box-1 {
+        background-color: green;
+      }
+      .box-2 {
+        background-color: royalblue;
+
+        position: relative;
+        top: 20px;
+        /* bottom: -20px; Same result */
+
+        width: 500px;
+        height: 300px;
+      }
+      .box-3 {
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1">Box 1</div>
+      <div class="box box-2">Box 2</div>
+      <div class="box box-3">Box 3</div>
+    </div>
+  </body>
+</html>
