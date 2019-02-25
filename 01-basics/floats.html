@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Floats</title>
+
+    <!--
+      Different ways to align elements on a page.
+
+      Float property allows you to take an element out of
+      "normal flow" of the page and place it as far to the
+      left/right of the containing element.
+
+      You should also use the 'width' property to indicate
+      how wide the float element should be else the box
+      will take up the full width of the containing element.
+
+      "zero-height container problem"
+
+        A clearfix is a way for an element to automatically clear 
+        its child elements, so that you don't need to add additional 
+        markup. It's generally used in float layouts where elements 
+        are floated to be stacked horizontally. 
+        
+        The clearfix is a way to combat the zero-height container 
+        problem for floated elements.  This behavior happens because
+        floated elements jump out of normal flow.
+
+        Three ways to handle:
+        1 on container add overflow: auto; 
+
+        2a add another child element
+        2b select the child element and add a css property clear: both
+
+        3 clearfix hack (commonly used)
+        3a on container add class "clearfix"
+        3b from css use the "after" pseudo element
+
+          .clearfix::after {
+            content: "";    < add blank content after
+            display: block; < transform content into block-level element
+            clear: both;    < clear property with value both
+          }
+    -->
+
+    <style>
+      .container {
+        background-color: #ccc;
+
+        /* Added border below to prove container is 0px tall since it only contained floated elements */
+        border-top: 20px solid blue;
+        border-bottom: 20px solid black;
+        /* border: 20px solid black; */
+
+        /* 1 One way to clearfix is to assign overflow property to the container.  Container now recognizes it's child elements.*/
+        /* overflow: auto; */
+      }
+
+      .left {
+        background-color: orangered;
+        width: 100px;
+        height: 100px;
+        float: left;
+      }
+      .right {
+        background-color: green;
+        width: 100px;
+        height: 100px;
+        float: right;
+      }
+
+      /* 2b For clearning float with another child element */
+      /* .clear {
+        clear: both;
+      } */
+
+      /* 3 Use clearfix hack is another way. */
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container clearfix">
+      <div class="left"></div>
+      <div class="right"></div>
+
+      <!-- 2a Another way to clearfix is to add another child element, select it and use property called clear. -->
+      <!-- <div class="clear"></div> -->
+    </div>
+  </body>
+</html>

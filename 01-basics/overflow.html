@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Overflow</title>
+
+    <!--
+        Sometimes content of an element does not fit into specified area
+        and is displaying outside of it's element's box.
+        
+        Note overflow properties only work with block level elements
+        with specified height.
+
+        This is when Overflow property comes in handy.
+
+        It specifies how to handle overflow of content one of the
+        four properties below:
+
+        Overflow values:
+        1 visible (default)
+        2 hidden - in order to hide value that is displaying outside of the box
+        3 auto - show scroll bars automatically as needed.
+        4 scroll - require scroll bar regardless of content size needs.
+
+    -->
+
+    <style>
+      div {
+        width: 400px;
+        height: 200px;
+        border: 5px solid green;
+        background-color: #ccc;
+
+        /* overflow: visible; */
+        /* overflow: hidden; */
+        /* overflow: auto; */
+        overflow: scroll;
+        /* overflow-x: scroll; */
+        /* overflow-y: scroll; */
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, eum! Eum
+      expedita magnam accusamus ipsa, dignissimos autem quibusdam excepturi,
+      placeat nisi reprehenderit ratione fugiat quod. Vero nisi neque possimus
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quae illo
+      explicabo ut soluta. Numquam ullam itaque perspiciatis rem dolores unde
+      labore totam illum nostrum. Soluta voluptatem nulla provident veniam!Ipsam
+      sed dolorum esse corporis exercitationem non ducimus vel minus, tenetur
+      velit praesentium impedit soluta, accusamus tempore deleniti recusandae
+      illo culpa aut libero! Enim sequi accusamus odio excepturi veritatis
+      obcaecati!
+    </div>
+  </body>
+</html>
