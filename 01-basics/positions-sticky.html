@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Positions - Fixed</title>
+    <title>Positions - Stikcy</title>
 
     <!--
         Positions:
@@ -20,8 +20,9 @@
         Fixed - Like absolute, fixed element also jumps out of normal flow.
             However fixed element is positioned relative to the viewporrt.
             It will always stay in the same place even if page is scrolled.
-        Sticky
-        
+        Sticky - Position according to user's scroll position.
+            Requires 'top' property position to be defined.
+            It will in position until the end of it's parent element container is reached.
      -->
 
     <style>
@@ -30,9 +31,9 @@
         width: 700px;
         height: 600px;
 
-        position: fixed; /* Set to other than static default */
+        /* position: fixed; Set to other than static default 
         top: 200px;
-        left: 150px;
+        left: 150px; */
       }
 
       .box {
@@ -44,21 +45,31 @@
 
       .box-1 {
         background-color: green;
-        position: absolute;
+        /* position: absolute;
         top: 50px;
-        left: 200px;
+        left: 200px; */
       }
       .box-2 {
         background-color: royalblue;
+        position: sticky;
+        top: 30px; /* Required if position: sticky.  Distance from top of it's container. */
       }
       .box-3 {
         background-color: gray;
-        z-index: 10;
-        position: relative;
+        /* z-index: 10;
+        position: relative; */
+      }
+
+      .box-4 {
+        background-color: yellow;
+        position: sticky;
+        top: 0px;
       }
     </style>
   </head>
   <body>
+    <div class="box box-4">Box 4</div>
+
     <div class="container">
       <div class="box box-1">Box 1</div>
       <div class="box box-2">Box 2</div>
