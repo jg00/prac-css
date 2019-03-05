@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Animations - Keyframes using from/to</title>
+
+    <!--
+       In CSS Key Frames we define initial style of element and also new style 
+       the element will get during animation.
+
+       @keyframes nameOfAnimation
+
+    -->
+
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: orangered;
+
+        position: relative;
+        animation-name: anim;
+        animation-duration: 4s;
+      }
+
+      /* Create a @keyfram with animation name */
+      @keyframes anim {
+        from {
+          left: 0;
+          top: 0;
+          background-color: orangered;
+        }
+        to {
+          left: 500px;
+          top: 0px;
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

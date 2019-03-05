@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Transforms - 2D - Translate Property</title>
+
+    <!--
+        Transformations are effects that allow us to change
+        elements position, size, shape.
+        
+    -->
+
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: orangered;
+        font-size: 60px;
+        color: white;
+        text-align: center;
+        padding-top: 55px;
+        box-sizing: border-box;
+
+        /* transform: translateX(200px); */
+        /* transform: translateY(200px); */
+        /* transform: translate(100px, 200px); */
+
+        /* You can combine with transition to change the affect of the transform on hover. */
+        transition-property: transform;
+        transition-duration: 1s;
+        /* transition: transform 1s; */
+      }
+
+      .box:hover {
+        transform: translate(100px, 200px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Box</div>
+  </body>
+</html>

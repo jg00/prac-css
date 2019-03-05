@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Transforms - 2D - Skew Properties</title>
+
+    <!--
+        Transformations are effects that allow us to change
+        elements position, size, shape.
+    -->
+
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: orangered;
+        font-size: 60px;
+        color: white;
+        text-align: center;
+        margin: 350px auto;
+        padding-top: 55px;
+        box-sizing: border-box;
+
+        transition: transform 1s;
+      }
+
+      .box:hover {
+        /* transform: skewX(90deg); */
+        /* transform: skewY(30deg); */
+        transform: skew(30deg, 20deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Box</div>
+  </body>
+</html>
