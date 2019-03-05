@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Animations - Keyframes using from/to</title>
+    <title>Animations - Keyframes using percentages.</title>
 
     <!--
        In CSS Key Frames we define initial style of element and also new style 
@@ -22,20 +22,54 @@
 
         position: relative;
         animation-name: anim;
-        animation-duration: 4s;
+        animation-duration: 4s; /* total 100% */
+
+        /* Other animation properties */
+        animation-delay: 2s;
+
+        /* infinite, etc. */
+        /* animation-iteration-count: 3; */
+
+        /* normal, reverse, alternate, alternate-reverse */
+        /* animation-direction: reverse; */
+
+        /* Like transition timing function - ease-in, ease-out, etc.*/
+        /* animation-timing-function: ease-out; */
+
+        /* Gives us ability to stop element where it stopped moving */
+        /* forwards, backwards, both, none */
+        /* animation-fill-mode: backwards; */
+
+        /* Combined */
+        animation: anim 4s ease-in 2s 3 alternate both;
       }
 
       /* Create a @keyfram with animation name */
       @keyframes anim {
         0% {
-          left: 0;
+          left: 300px;
           top: 0;
           background-color: orangered;
         }
-        100% {
+        25% {
           left: 500px;
           top: 0px;
           background-color: green;
+        }
+        50% {
+          left: 500px;
+          top: 500px;
+          background-color: goldenrod;
+        }
+        75% {
+          left: 0;
+          top: 500px;
+          background-color: royalblue;
+        }
+        100% {
+          left: 0;
+          top: 300px;
+          background-color: orangered;
         }
       }
     </style>
