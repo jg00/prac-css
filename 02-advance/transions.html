@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Transitions</title>
+
+    <!--
+        Transition Properties:
+        tansition-property  (mandatory) > property you want to add an effect to
+        transition-duration (mandatory)
+        transition-delay (optional)
+        transition-timing-function (optional) 
+            - ease (default), linear (same speed start/end), ease-in, ease-out (slow end) 
+            - cubic-bezier(start eff-x, start eff-y, end eff-x, end eff-y)
+            - cubic-bezier.com
+
+        transition width 1s 1s ease-in
+    -->
+
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: orangered;
+
+        /* transition-property: width; */
+        /* transition-duration: 1s; */
+        /* transition-delay: 1s; */
+        /* transition-timing-function: ease-in; */
+        /* transition-timing-function: cubic-bezier(0.32, 0.71, 0.96, 0.05); */
+
+        /* transition: width 1s 0.5s ease-in; */
+        /* transition: background-color 5s; */
+
+        /* transition: width 1s 0.5s ease-in, background-color 5s; */
+
+        transition: all 1s;
+      }
+
+      .box:hover {
+        width: 400px;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
