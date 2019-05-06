@@ -7,33 +7,117 @@
     <title>Document</title>
     <style>
       div {
-        width: 500px;
+        /******************** Settings for - background-size, background-origin ********************/
+        /* width: 500px;
         height: 500px;
         border: 100px double red;
         color: darkgreen;
-        margin: 100px auto;
+        margin: 50px auto;
+        padding: 20px;
         background-image: url("../../img/image 1.jpeg");
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; */
 
-        /* background-size: 200px; */
+        /******************** PART 2 ********************/
+        /**** background-size ****/
+        /* background-size: 300px 100px; */
+        /* background-size: 300px auto; */
+        /* background-size: auto 300px; */
 
-        /* background-position: -50px -50px; */
-        /* background-position: right bottom; */
-        /* background-position: right 50px bottom 50px; */
+        /* background-size: 50%; */
+        /* background-size: 50% 50%; */
 
-        /* background-position: 50% 50%; */
-        /* background-position: center; */
-        /* background-position: 10% 50%; */
-        /* background-position: 90% 50%; */
-        /* background-position: 90% 40%; */
+        /* background-size: 100% 100%; */
+        /* background-size: cover; */
 
-        /* inherit - values of background-position property by default work according to parent element */
-        /* background-position: 90% 40%;
-        background-attachment: inherit; */
+        /* background-size: 100% auto; */
+        /* background-size: contain; */
 
-        /* fixed - values of background-position property now work according to viewport. Parallax Effect CSS. */
-        background-position: 90% 50%;
-        background-attachment: fixed;
+        /**** background-origin ****/
+        /* padding-box - by default image starts displaying from upper-left corner of padding edge (not content edge). */
+        /* background-origin: padding-box; */
+
+        /* content-box - image starts displaying from upper-left corner of content edge (not padding edge). */
+        /* background-origin: content-box; */
+
+        /* border-box - image starts displaying from upper-left corner of border edge (not padding edge nor content edge). */
+        /* background-origin: border-box; */
+
+        /******************** Settings for - background-clip ********************/
+        /* width: 400px;
+        height: 400px;
+        border: 50px dotted red;
+        color: darkgreen;
+        margin: 50px auto;
+        padding: 20px;
+        background-image: url("../../img/image 1.jpeg");
+        background-repeat: no-repeat; */
+
+        /******************** PART 2 - cont ********************/
+        /**** background-size ****/
+        /* background-size: 300px 100px; */
+        /* background-size: 300px auto; */
+        /* background-size: auto 300px; */
+
+        /* background-size: 50%; */
+        /* background-size: 50% 50%; */
+
+        /* background-size: 100% 100%; */
+        /* background-size: cover; */
+
+        /* background-size: 100% auto; */
+        /* background-size: contain; */
+
+        /**** background-origin ****/
+        /* padding-box - by default image starts displaying from upper-left corner of padding edge (not content edge). */
+        /* background-origin: padding-box; */
+
+        /* content-box - image starts displaying from upper-left corner of content edge (not padding edge). */
+        /* background-origin: content-box; */
+
+        /* border-box - image starts displaying from upper-left corner of border edge (not padding edge nor content edge). */
+        /* background-origin: border-box; */
+
+        /**** background-clip ****/
+        /* border-box - by default background-clip value is border-box.  Image displays from border outside edge. */
+        /* background-origin: border-box; */
+        /* background-clip: border-box; */
+
+        /* padding-box - Image displays from border inside edge. In other words outside edge of padding.*/
+        /* background-origin: border-box; */
+        /* background-clip: padding-box; */
+
+        /* content-box - Image displays from padding inside edge. In other words outside edge of content.*/
+        /* background-origin: border-box;
+        background-clip: content-box; */
+
+        /******************** Settings for - background short form ********************/
+        width: 400px;
+        height: 400px;
+        border: 100px double red;
+        color: darkgreen;
+        margin: 50px auto;
+        padding: 20px;
+
+        /*
+            The property is a shorthand that sets the following properties in a single declaration:
+            background-clip
+            , background-color
+            , background-image
+            , background-origin
+            , background-position
+            , background-repeat
+            , background-size
+            , and background-attachment.
+        */
+
+        /* Ex 1 */
+        /* background: green url("../../img/image 1.jpeg") no-repeat center fixed /
+          cover; */
+
+        /* Ex 2 */
+        background: url("../../img/image 1.jpeg") top left no-repeat / 300px
+            auto,
+          url("../../img/image 1.jpeg") bottom right no-repeat / 300px auto;
       }
     </style>
   </head>
