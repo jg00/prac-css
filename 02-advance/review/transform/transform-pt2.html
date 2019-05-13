@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Transforms - skew, rotate, multiple tranforms</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: orangered;
+        font-size: 60px;
+        color: white;
+        text-align: center;
+        margin: 350px auto;
+        padding-top: 55px;
+        box-sizing: border-box;
+        transition: transform 1.5s;
+        /* transform-origin: bottom right; */
+      }
+
+      .box:hover {
+        /* transform: skewX(30deg); */
+        /* transform: skew(30deg, 50deg); */
+
+        /* transform: rotateX(180deg); */
+        /* transform: rotateY(180deg); */
+
+        /* Use with tranform-origin: bottom right */
+        /* transform: rotate(90deg); */
+
+        /* transform: rotateZ(90deg); */
+
+        transform: translate(200px, 200px) scale(1.5, 1.5) rotateZ(360deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Box</div>
+  </body>
+</html>
